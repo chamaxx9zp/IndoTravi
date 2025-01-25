@@ -20,32 +20,28 @@ function HeroSection() {
           </p>
 
             {/* Search Panel */}
-          <div className="w-full max-w-4xl bg-white/20 backdrop-blur-md p-4 rounded-full flex flex-col md:flex-row gap-4">
+          <div className="w-full max-w-4xl bg-white/20 backdrop-blur-md shadow-2xl p-4 rounded-full flex flex-col md:flex-row gap-4">
             <div className="flex-1 relative">
-
-        
-              <button className="w-full  text-white p-3 rounded-lg flex items-center justify-between">
-                <span><CalendarMonthIcon/> Date</span>
-                <div className="w-[2px] bg-white h-full" />
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-                
-              </button>
-              <div className="w-[2px] bg-white h-full" />
-
+                <button className="w-full  text-white p-3 rounded-lg flex items-center justify-between">
+                    <span><CalendarMonthIcon/> Date</span>
+                    <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    >
+                    <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M19 9l-7 7-7-7"
+                    />
+                    </svg>
+                    
+                </button>
             </div>
             <div className="flex-1 relative">
+            <div className="w-[1px] bg-white h-full absolute" />
               <button className="w-full text-white p-3 rounded-lg flex items-center justify-between">
                 <span><AccountBalanceWalletIcon/> Budget</span>
                 <svg
@@ -65,6 +61,7 @@ function HeroSection() {
               <div className="search-dropdown"></div>
             </div>
             <div className="flex-1 relative">
+            <div className="w-[1px] bg-white h-full absolute" />
               <button className="w-full text-white p-3 rounded-lg flex items-center justify-between">
                 <span><PersonOutlineIcon/> Guest</span>
                 <svg
