@@ -19,31 +19,13 @@ function HeroSection() {
             Exploring Indonesia is an unforgettable adventure.
           </p>
 
-            {/* Search Panel */}
-          <div className="w-full max-w-4xl bg-white/20 backdrop-blur-md shadow-2xl p-4 rounded-full flex flex-col md:flex-row gap-4">
+          {/* Search Panel */}
+          <div className="w-full max-w-4xl bg-white/20 backdrop-blur-md shadow-2xl p-4 rounded-2xl flex flex-col md:flex-row gap-4">
             <div className="flex-1 relative">
-                <button className="w-full  text-white p-3 rounded-lg flex items-center justify-between">
-                    <span><CalendarMonthIcon/> Date</span>
-                    <svg
-                    className="w-5 h-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 9l-7 7-7-7"
-                    />
-                    </svg>
-                    
-                </button>
-            </div>
-            <div className="flex-1 relative">
-            <div className="w-[1px] bg-white h-full absolute" />
-              <button className="w-full text-white p-3 rounded-lg flex items-center justify-between">
-                <span><AccountBalanceWalletIcon/> Budget</span>
+              <button className="w-full text-white p-3 rounded-lg flex items-center justify-between hover:bg-white/30">
+                <span className="flex items-center gap-2">
+                  <CalendarMonthIcon /> Date
+                </span>
                 <svg
                   className="w-5 h-5"
                   fill="none"
@@ -58,12 +40,15 @@ function HeroSection() {
                   />
                 </svg>
               </button>
-              <div className="search-dropdown"></div>
+              <div className="block md:hidden w-full h-[1px] bg-white/30 my-2"></div>
             </div>
+
             <div className="flex-1 relative">
-            <div className="w-[1px] bg-white h-full absolute" />
-              <button className="w-full text-white p-3 rounded-lg flex items-center justify-between">
-                <span><PersonOutlineIcon/> Guest</span>
+              <div className="hidden md:block w-[1px] bg-white h-full absolute left-0 top-0" />
+              <button className="w-full text-white p-3 rounded-lg flex items-center justify-between hover:bg-white/30">
+                <span className="flex items-center gap-2">
+                  <AccountBalanceWalletIcon /> Budget
+                </span>
                 <svg
                   className="w-5 h-5"
                   fill="none"
@@ -78,15 +63,40 @@ function HeroSection() {
                   />
                 </svg>
               </button>
-              <div className="search-dropdown"></div>
+              <div className="block md:hidden w-full h-[1px] bg-white/30 my-2"></div>
             </div>
+
+            <div className="flex-1 relative">
+              <div className="hidden md:block w-[1px] bg-white h-full absolute left-0 top-0" />
+              <button className="w-full text-white p-3 rounded-lg flex items-center justify-between hover:bg-white/30">
+                <span className="flex items-center gap-2">
+                  <PersonOutlineIcon /> Guest
+                </span>
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+            </div>
+
             <button className="bg-white text-black px-8 py-3 rounded-full transition-all duration-300 hover:bg-gray-100 hover:shadow-lg transform hover:scale-105">
               Search
             </button>
           </div>
 
           {/* stat cards */}
-          <div className={`${styles["stats-container"]} grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-4xl`}>
+          <div
+            className={`${styles["stats-container"]} grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-4xl mt-12`}
+          >
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
               <div className="text-3xl font-bold text-gray-900">10M+</div>
               <div className="text-gray-500">Total Customers</div>
