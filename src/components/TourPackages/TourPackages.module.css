@@ -1,7 +1,6 @@
-@import "tailwindcss";
-
 
 .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
     position: relative;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
+  
