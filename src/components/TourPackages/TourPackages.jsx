@@ -70,7 +70,7 @@ function TourPackages() {
           </span>
         </div>
 
-        <div className="absolute bottom-4 left-4 text-white w-[calc(100%-2rem)] bg-white/20 backdrop-blur-md px-4 py-4 rounded-2xl">
+        <div className="absolute bottom-4 left-4 text-white w-[calc(100%-2rem)] bg-white/20 backdrop-blur-md px-4 py-4 rounded-2xl group-hover:translate-y-[-8px] transition-transform duration-500">
           <span className="text-sm mb-1 block">{tour.date}</span>
           <div className="flex justify-between items-center">
             <h3 className="text-2xl font-semibold">{tour.title}</h3>
