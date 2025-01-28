@@ -1,10 +1,18 @@
 import styles from './HeroSection.module.css';
 import React from 'react';
+import { useState, useEffect } from 'react'
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 
 function HeroSection() {
+    const [date, setDate] = useState('');
+    const [budget, setBudget] = useState('');
+    const [guest, setGuest] = useState('');
+
+    const handleSearch = () => {
+      alert(`Search Details: \nDate: ${date || 'Not Selected'} \nBudget: ${budget || 'Not Specified'} \nGuest: ${guest || 'Not Specified'}`);
+    };
   return (
     <>
       <div className={`${styles["hero-bg"]} relative`}>
@@ -22,9 +30,17 @@ function HeroSection() {
           {/* Search Panel */}
           <div className="w-full max-w-4xl bg-white/20 backdrop-blur-md shadow-2xl p-4 md:rounded-full rounded-4xl flex flex-col md:flex-row gap-4">
             <div className="flex-1 relative">
-              <button className="w-full text-white p-3 md:rounded-full rounded-4xl flex items-center justify-between hover:bg-white/30 md:mx-2">
+              <button
+                onClick={() => {
+                  const selectedDate = prompt(
+                    "Enter a date (e.g., 2025-01-28):"
+                  );
+                  if (selectedDate) setDate(selectedDate);
+                }}
+                className="w-full text-white p-3 md:rounded-full rounded-4xl flex items-center justify-between hover:bg-white/30 md:mx-2"
+              >
                 <span className="flex items-center gap-2">
-                  <CalendarMonthIcon /> Date
+                  <CalendarMonthIcon /> {date || "Date"}
                 </span>
                 <svg
                   className="w-5 h-5"
@@ -45,9 +61,17 @@ function HeroSection() {
 
             <div className="flex-1 relative">
               <div className="hidden md:block w-[1px] bg-white h-full absolute left-0 top-0" />
-              <button className="w-full text-white p-3 md:rounded-full rounded-4xl flex items-center justify-between hover:bg-white/30 md:mx-2">
+              <button
+                onClick={() => {
+                  const enteredBudget = prompt(
+                    "Enter your budget (e.g., $500):"
+                  );
+                  if (enteredBudget) setBudget(enteredBudget);
+                }}
+                className="w-full text-white p-3 md:rounded-full rounded-4xl flex items-center justify-between hover:bg-white/30 md:mx-2"
+              >
                 <span className="flex items-center gap-2">
-                  <AccountBalanceWalletIcon /> Budget
+                  <AccountBalanceWalletIcon /> {budget || "Budget"}
                 </span>
                 <svg
                   className="w-5 h-5"
@@ -68,9 +92,17 @@ function HeroSection() {
 
             <div className="flex-1 relative">
               <div className="hidden md:block w-[1px] bg-white h-full absolute left-0 top-0" />
-              <button className="w-full text-white p-3 md:rounded-full rounded-4xl flex items-center justify-between hover:bg-white/30 md:mx-2">
+              <button
+                onClick={() => {
+                  const enteredGuest = prompt(
+                    "Enter the number of guests (e.g., 4):"
+                  );
+                  if (enteredGuest) setGuest(enteredGuest);
+                }}
+                className="w-full text-white p-3 md:rounded-full rounded-4xl flex items-center justify-between hover:bg-white/30 md:mx-2"
+              >
                 <span className="flex items-center gap-2">
-                  <PersonOutlineIcon /> Guest
+                  <PersonOutlineIcon /> {guest || "Guest"}
                 </span>
                 <svg
                   className="w-5 h-5"
@@ -88,7 +120,10 @@ function HeroSection() {
               </button>
             </div>
 
-            <button className="bg-white text-black px-8 py-3 rounded-full transition-all duration-300 hover:bg-gray-100 hover:shadow-lg transform hover:scale-105">
+            <button
+              onClick={handleSearch}
+              className="bg-white text-black px-8 py-3 rounded-full transition-all duration-300 hover:bg-gray-100 hover:shadow-lg transform hover:scale-105"
+            >
               Search
             </button>
           </div>
