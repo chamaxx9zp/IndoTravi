@@ -20,9 +20,9 @@ function HeroSection() {
           </p>
 
           {/* Search Panel */}
-          <div className="w-full max-w-4xl bg-white/20 backdrop-blur-md shadow-2xl p-4 rounded-2xl flex flex-col md:flex-row gap-4">
+          <div className="w-full max-w-4xl bg-white/20 backdrop-blur-md shadow-2xl p-4 md:rounded-full rounded-4xl flex flex-col md:flex-row gap-4">
             <div className="flex-1 relative">
-              <button className="w-full text-white p-3 rounded-lg flex items-center justify-between hover:bg-white/30">
+              <button className="w-full text-white p-3 md:rounded-full rounded-4xl flex items-center justify-between hover:bg-white/30 md:mx-2">
                 <span className="flex items-center gap-2">
                   <CalendarMonthIcon /> Date
                 </span>
@@ -45,7 +45,7 @@ function HeroSection() {
 
             <div className="flex-1 relative">
               <div className="hidden md:block w-[1px] bg-white h-full absolute left-0 top-0" />
-              <button className="w-full text-white p-3 rounded-lg flex items-center justify-between hover:bg-white/30">
+              <button className="w-full text-white p-3 md:rounded-full rounded-4xl flex items-center justify-between hover:bg-white/30 md:mx-2">
                 <span className="flex items-center gap-2">
                   <AccountBalanceWalletIcon /> Budget
                 </span>
@@ -68,7 +68,7 @@ function HeroSection() {
 
             <div className="flex-1 relative">
               <div className="hidden md:block w-[1px] bg-white h-full absolute left-0 top-0" />
-              <button className="w-full text-white p-3 rounded-lg flex items-center justify-between hover:bg-white/30">
+              <button className="w-full text-white p-3 md:rounded-full rounded-4xl flex items-center justify-between hover:bg-white/30 md:mx-2">
                 <span className="flex items-center gap-2">
                   <PersonOutlineIcon /> Guest
                 </span>
