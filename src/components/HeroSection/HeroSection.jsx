@@ -7,10 +7,10 @@ import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 function HeroSection() {
   return (
     <>
-      <div className={`${styles["hero-bg"]} min-h-screen relative`}>
+      <div className={`${styles["hero-bg"]} relative`}>
         <div className="absolute inset-0 bg-black/40"></div>
-        <div className="relative mx-auto px-4 sm:px-6 lg:px-8 min-h-screen flex flex-col justify-center items-center text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
+        <div className="relative mx-auto px-4 lg:px-8 flex flex-col justify-center items-center text-center">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mt-24 leading-tight">
             Extraordinary natural and
             <br />
             cultural charm
