@@ -45,7 +45,7 @@ function LocationSection() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {images.map((image, index) => (
               <div key={index} className={`${layoutConfig[index]} relative rounded-2xl overflow-hidden cursor-pointer group`}>
-                <div className="absolute inset-0 bg-black/50 hover:bg-black/30 pointer-events-none transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-black/40 hover:bg-black/30 pointer-events-none transition-opacity duration-500"></div>
                 <img
                   src={image.src}
                   alt={`Image ${index + 1}`}

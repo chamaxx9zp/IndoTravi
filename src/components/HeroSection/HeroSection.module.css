@@ -6,7 +6,7 @@
     margin: 10px;
     border-radius: 1.5rem;
     height: 90%;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
 .stats-container {

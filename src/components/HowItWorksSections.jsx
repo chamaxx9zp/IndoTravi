@@ -31,7 +31,6 @@ function HowItWorksSections() {
   return (
     <section className="py-20 px-4 z-10 bg-gray-100">
       <div className="max-w-7xl mx-auto">
-
         {/* Mobile Only Title */}
         <div className="mb-12 md:hidden">
           <h3 className="text-gray-500 text-lg mb-2">How it works</h3>
@@ -39,21 +38,22 @@ function HowItWorksSections() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-
-          {/* Travel Image with search section */}
-          <div className="relative rounded-3xl overflow-hidden">
-            <img 
+          <div className="relative rounded-3xl overflow-hidden hover:shadow-2xl group">
+            <img
               src="https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
               alt="Travel destination"
-              className="w-full md:h-full h-[650px] object-cover"
+              className="w-full md:h-full h-[650px] object-cover transition-transform duration-500 will-change-transform group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-black/50"></div>
-            
-            <div className="absolute inset-0 flex flex-col items-center justify-end p-2 pb-8">
-              <SearchComponent/>
+
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-black/10 transition-opacity duration-500"></div>
+
+            <div className="absolute inset-0 flex flex-col items-center justify-end p-2 pb-8 transition-transform duration-500 group-hover:translate-y-[-8px] will-change-transform">
+              <SearchComponent />
               <div className="text-white text-center mt-8 max-w-2xl">
                 <p className="text-lg mb-4">
-                  Embark on a journey to find your dream destination, where adventure and relaxation await, creating unforgettable memories along the way
+                  Embark on a journey to find your dream destination, where
+                  adventure and relaxation await, creating unforgettable
+                  memories along the way
                 </p>
               </div>
             </div>
@@ -70,28 +70,29 @@ function HowItWorksSections() {
             {/* Travel Tabs */}
             <div className="grid grid-cols-1 gap-8">
               {features.map((feature, index) => (
-                <div 
+                <div
                   key={index}
-                  className="bg-gray-100 hover:bg-white p-6 rounded-2xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group">
-                    <span className='flex gap-4'>
-                      <div className="w-14 h-14 bg-white group-hover:bg-gray-100 rounded-xl flex items-center justify-center px-4 py-4">
-                        {feature.icon}
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                        <p className="text-gray-500">{feature.description}</p>
-                      </div>
-                    </span>
+                  className="bg-gray-100 hover:bg-white p-6 rounded-2xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group"
+                >
+                  <span className="flex gap-4">
+                    <div className="w-14 h-14 bg-white group-hover:bg-gray-100 rounded-xl flex items-center justify-center px-4 py-4">
+                      {feature.icon}
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold mb-2">
+                        {feature.title}
+                      </h3>
+                      <p className="text-gray-500">{feature.description}</p>
+                    </div>
+                  </span>
                 </div>
               ))}
             </div>
           </div>
-
         </div>
-
       </div>
     </section>
-  )
+  );
 }
 
 export default HowItWorksSections;
