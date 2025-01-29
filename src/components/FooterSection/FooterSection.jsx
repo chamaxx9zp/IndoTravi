@@ -61,7 +61,7 @@ function FooterSection() {
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="grid md:grid-cols-3 text-center md:text-start">
             {Object.values(footerLinks).map((section) => (
-              <div key={section.title}>
+              <div key={section.title} className='my-2'>
                 <h3 className="text-white text-xl font-semibold mb-6">
                   {section.title}
                 </h3>
@@ -70,7 +70,7 @@ function FooterSection() {
                     <li key={link.name}>
                       <a
                         href={link.href}
-                        className="hover:text-white transition-colors duration-300"
+                        className="hover:text-white transition-colors duration-300 mt-0"
                       >
                         {link.name}
                       </a>
