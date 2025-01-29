@@ -1,19 +1,19 @@
 function LocationSection() {
     const images = [
       {
-        src: 'https://images.unsplash.com/photo-1604999333679-b86d54738315?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
+        src: 'https://images.pexels.com/photos/5272970/pexels-photo-5272970.jpeg?auto=compress&cs=tinysrgb&w=800',
         text: ['Bromo, East Java', 'Bromo Tengger '],
       },
       {
-        src: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1938&q=80',
+        src: 'https://images.pexels.com/photos/2253821/pexels-photo-2253821.jpeg?auto=compress&cs=tinysrgb&w=800',
         text: ['Denpasar, Bali, ', 'Bali Beach Tourism'],
       },
       {
-        src: 'https://images.unsplash.com/photo-1596402184320-417e7178b2cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
+        src: 'https://images.pexels.com/photos/2758567/pexels-photo-2758567.jpeg?auto=compress&cs=tinysrgb&w=800',
         text: ['Lampung, South Sumatra', 'Sumatra Tourism'],
       },
       {
-        src: 'https://images.unsplash.com/photo-1584810359583-96fc3448beaa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
+        src: 'https://images.pexels.com/photos/4090091/pexels-photo-4090091.jpeg?auto=compress&cs=tinysrgb&w=800',
         text: ['Jogjakarta, Central Java', 'Borobudur Temple Tour'],
       },
     ];

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { LanguageToggle } from '../Common Component/LanguageToggle';
 
 function NavbarSection() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,6 +21,10 @@ function NavbarSection() {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleLanguageChange = () => {
+    console.log(`Language changed to: ${language}`);
   };
 
   return (
@@ -51,14 +56,7 @@ function NavbarSection() {
 
           {/* Language and Login */}
           <div className="hidden md:flex items-center space-x-4">
-            {/* <div className={`rounded-4xl flex items-center space-x-2`}>
-              <button className={`py-2${
-                isScrolled ? 'text-black hover:text-gray-700' : 'text-white hover:text-gray-300'
-              } px-2 transition-colors duration-200`}>De</button>
-              <button className={`py-2${
-                isScrolled ? 'text-black hover:text-gray-700 ' : 'text-black bg-white rounded-4xl'
-              } px-2 transition-colors duration-200`}>En</button>
-            </div> */}
+          {/* <LanguageToggle onChange={handleLanguageChange} /> */}
             <button className={`px-6 py-2 rounded-full transition-all duration-300 hover:shadow-lg transform hover:scale-105 ${
               isScrolled 
                 ? 'bg-black text-white hover:bg-gray-800' 
@@ -135,6 +133,7 @@ function NavbarSection() {
             <a href="#" className="transition-all duration-300 ease-in-out text-gray-400 hover:text-black" onClick={toggleMenu}>Contact</a>
             
             <div className="mt-8 flex flex-col items-center space-y-4">
+            {/* <LanguageToggle onChange={handleLanguageChange} /> */}
               <button className="px-6 py-2 rounded-full bg-black text-white hover:bg-gray-800 transition-all duration-300 hover:shadow-lg transform hover:scale-105">
                 Login
               </button>

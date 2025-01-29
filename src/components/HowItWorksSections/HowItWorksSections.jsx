@@ -44,7 +44,7 @@ function HowItWorksSections() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           <div className="relative rounded-3xl overflow-hidden hover:shadow-2xl group">
             <img
-              src="https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+              src="https://images.pexels.com/photos/30382179/pexels-photo-30382179/free-photo-of-serene-alpine-lake-in-schwende-rute-switzerland.jpeg?auto=compress&cs=tinysrgb&w=800"
               alt="Travel destination"
               className="w-full md:h-full h-[650px] object-cover transition-transform duration-500 will-change-transform group-hover:scale-110"
             />
