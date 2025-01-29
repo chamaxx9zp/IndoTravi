@@ -5,12 +5,40 @@
     background-repeat: no-repeat;
     margin: 10px;
     border-radius: 1.5rem;
-    height: 90%;
+    /* height: 90%; */
     /* overflow: hidden; */
   }
 
-.stats-container {
+  .stats-container {
     margin-bottom: -58rem;
     position: absolute;
     z-index: 10;
-}
+  }
+
+  /* @media (min-width: 1024px) {
+    .stats-container {
+      margin-bottom: -58rem;
+      position: absolute;
+      z-index: 10;
+    }
+  } */
+/* 
+  @media (max-width: 767px) {
+    .stats-container {
+      margin-bottom: -8rem;
+      position: absolute;
+      z-index: 10;
+    }
+  } */
+
+
+  @media (max-width: 767px) {
+    .hero-bg {
+      height: 895px;
+    }
+  }
+  @media (min-width: 767px) {
+    .hero-bg {
+      height: 90%;
+    }
+  }

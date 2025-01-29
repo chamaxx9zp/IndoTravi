@@ -6,7 +6,7 @@ function HeroSection() {
   return (
     <>
       <div
-        className={`${styles["hero-bg"]} relative min-h-[700px] bg-gray-100`}
+        className={`${styles["hero-bg"]} h-[895px] relative md:min-h-[700px] bg-gray-100`}
       >
         <div className="absolute inset-0 bg-black/40 rounded-3xl"></div>
         <div className="relative mx-auto px-4 lg:px-8 flex flex-col justify-center items-center text-center">
@@ -22,7 +22,7 @@ function HeroSection() {
           <SearchComponent />
 
           <div
-            className={`${styles["stats-container"]} grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-7xl mt-12 z-50`}
+            className={`${styles["stats-container"]} grid grid-cols-2 md:grid-cols-4 gap-4 w-full md:max-w-7xl md:px-0 px-4 mt-12 z-50`}
           >
             <div className="bg-white p-6 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
               <div className="text-3xl font-bold text-gray-900">10M+</div>
