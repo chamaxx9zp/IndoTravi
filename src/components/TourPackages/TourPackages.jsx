@@ -82,7 +82,7 @@ function TourPackages() {
   );
 
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-20 px-4 z-10 bg-gray-100">
       <div className="max-w-7xl mx-auto">
         <div className="mb-12">
           <span className="text-gray-500 text-lg">Tour packages</span>

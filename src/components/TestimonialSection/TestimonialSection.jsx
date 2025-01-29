@@ -35,7 +35,7 @@ function TestimonialSection() {
   };
 
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-20 px-4 bg-gray-100">
     <div className="max-w-7xl mx-auto">
       <div className="flex md:flex-row flex-col">
 

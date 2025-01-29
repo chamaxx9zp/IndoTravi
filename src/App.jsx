@@ -6,6 +6,7 @@ import OurBlogSection from './components/OurBlogSection/OurBlogSection'
 import TestimonialSection from './components/TestimonialSection/TestimonialSection'
 import FooterSection from './components/FooterSection/FooterSection'
 import NavbarSection from './components/NavbarSection/NavbarSection'
+import HowItWorksSections from './components/HowItWorksSections'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <NavbarSection/>
     <HeroSection/>
     <LocationSection/>
+    <HowItWorksSections/>
     <TourPackages/>
     <TestimonialSection/>
     <OurBlogSection/>

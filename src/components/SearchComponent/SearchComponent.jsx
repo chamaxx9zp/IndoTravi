@@ -45,7 +45,7 @@ function SearchComponent() {
               </button>
               <div className="block md:hidden w-full h-[1px] bg-white/30 my-2"></div>
               {activeDropdown === 'date' && (
-                <div className="absolute left-0 right-0 mt-2 bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 z-50 origin-top">
+                <div className="absolute left-0 right-0 mt-2 bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 origin-top">
                   {dates.map((date) => (
                     <div 
                       key={date}
@@ -69,7 +69,7 @@ function SearchComponent() {
               </button>
               <div className="block md:hidden w-full h-[1px] bg-white/30 my-2"></div>
               {activeDropdown === 'budget' && (
-                <div className="absolute left-0 right-0 mt-2 bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 z-50 origin-top">
+                <div className="absolute left-0 right-0 mt-2 bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 origin-top">
                   {budgets.map((budget) => (
                     <div 
                       key={budget}
@@ -93,7 +93,7 @@ function SearchComponent() {
               </button>
               <div className="block md:hidden w-full h-[1px] bg-white/30 my-2"></div>
               {activeDropdown === 'guests' && (
-                <div className="absolute left-0 right-0 mt-2 bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 z-50 origin-top">
+                <div className="absolute left-0 right-0 mt-2 bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 origin-top">
                   {guestOptions.map((option) => (
                     <div 
                       key={option}

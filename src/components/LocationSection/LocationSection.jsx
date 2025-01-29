@@ -26,7 +26,7 @@ function LocationSection() {
     ];
   
     return (
-      <section className="px-4 py-20 bg-white">
+      <section className="px-4 py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
             <span className="text-gray-500 text-lg">Best location</span>
