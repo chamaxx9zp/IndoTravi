@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import WestIcon from '@mui/icons-material/West';
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
+import { motion } from "framer-motion";
+
 
 const testimonials = [
     {
@@ -32,6 +34,12 @@ function TestimonialSection() {
 
   const prevTestimonial = () => {
     setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  };
+
+  const variants = {
+    enter: { opacity: 0, x: 30 },
+    center: { opacity: 1, x: 0 },
+    exit: { opacity: 0, x: -30 }
   };
 
   return (
@@ -84,9 +92,16 @@ function TestimonialSection() {
             color="disabled"
             sx={{ fontSize: 200 }}
           />
-          <p className="text-gray-600 text-2xl leading-relaxed max-w-3xl md:justify-start h-[200px] overflow-hidden">
+          <motion.p
+          key={currentTestimonial}
+          variants={variants}
+          initial="enter"
+          animate="center"
+          exit="exit"
+          transition={{ duration: 0.5 }}
+           className="text-gray-600 text-2xl leading-relaxed max-w-3xl md:justify-start h-[200px] overflow-hidden">
           {testimonials[currentTestimonial].text}
-          </p>
+          </motion.p>
         </div>
       </div>
     </div>
