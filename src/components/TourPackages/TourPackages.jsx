@@ -124,7 +124,9 @@ function TourPackages() {
         )}
 
         <div className="text-center mt-[4px] md:mt-12">
-          <button className="bg-black text-white px-8 md:px-12 py-3 rounded-full transition-all duration-300 hover:shadow-lg transform hover:scale-105 cursor-pointer">
+          <button className="bg-black text-white px-8 md:px-16 py-3 rounded-full border border-black 
+      transition-all duration-300 hover:shadow-xl transform hover:scale-105 cursor-pointer 
+      hover:bg-transparent hover:text-black">
             View more
           </button>
         </div>

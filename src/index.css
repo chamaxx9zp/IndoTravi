@@ -6,3 +6,7 @@
     margin-top: 1rem;
 }
 
+div#root {
+    background-color: var(--color-gray-100);
+}
+

@@ -27,8 +27,8 @@ function SearchComponent() {
         setActiveDropdown(null)
       }
     
-      const dates = ['Next Week', 'Next Month', 'In 3 Months', 'Custom Date']
-      const budgets = ['$0 - $1000', '$1000 - $2000', '$2000 - $5000', '$5000+']
+      const dates = ['Next Week', 'Next Month', 'In 3 Months', 'Custom']
+      const budgets = ['$0 - $100', '$100 - $200', '$200 - $500', '$500+']
       const guestOptions = ['1 Guest', '2 Guests', '3-4 Guests', '5+ Guests']
     
   return (

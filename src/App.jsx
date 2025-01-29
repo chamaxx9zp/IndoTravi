@@ -6,7 +6,7 @@ import OurBlogSection from './components/OurBlogSection/OurBlogSection'
 import TestimonialSection from './components/TestimonialSection/TestimonialSection'
 import FooterSection from './components/FooterSection/FooterSection'
 import NavbarSection from './components/NavbarSection/NavbarSection'
-import HowItWorksSections from './components/HowItWorksSections'
+import HowItWorksSections from './components/HowItWorksSections/HowItWorksSections'
 
 function App() {
   return (

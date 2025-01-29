@@ -1,33 +1,37 @@
-import React from 'react'
-import SearchIcon from '@mui/icons-material/Search';
-import ConfirmationNumberIcon from '@mui/icons-material/ConfirmationNumber';
-import PaymentIcon from '@mui/icons-material/Payment';
-import ExploreIcon from '@mui/icons-material/Explore';
-import SearchComponent from './SearchComponent/SearchComponent';
+import React from "react";
+import SearchIcon from "@mui/icons-material/Search";
+import ConfirmationNumberIcon from "@mui/icons-material/ConfirmationNumber";
+import PaymentIcon from "@mui/icons-material/Payment";
+import ExploreIcon from "@mui/icons-material/Explore";
+import SearchComponent from "../Common Component/SearchComponent";
 
 function HowItWorksSections() {
-    const features = [
-        {
-          icon: <SearchIcon className="w-8 h-8" />,
-          title: "Find your destination",
-          description: "Embark on a journey to discover your dream destination, where adventure and relaxation await."
-        },
-        {
-          icon: <ConfirmationNumberIcon className="w-8 h-8" />,
-          title: "Book a ticket",
-          description: "Ensure a smooth travel experience by booking tickets to your preferred destination via our booking platform"
-        },
-        {
-          icon: <PaymentIcon className="w-8 h-8" />,
-          title: "Make payment",
-          description: "We offer a variety of payment options to meet your preferences and ensure a hassle-free transaction process."
-        },
-        {
-          icon: <ExploreIcon className="w-8 h-8" />,
-          title: "Explore destination",
-          description: "You'll be immersed in a captivating tapestry of sights, sounds and tastes, as you wind your way through the ancient streets"
-        }
-      ];
+  const features = [
+    {
+      icon: <SearchIcon className="w-8 h-8" />,
+      title: "Find your destination",
+      description:
+        "Embark on a journey to discover your dream destination, where adventure and relaxation await.",
+    },
+    {
+      icon: <ConfirmationNumberIcon className="w-8 h-8" />,
+      title: "Book a ticket",
+      description:
+        "Ensure a smooth travel experience by booking tickets to your preferred destination via our booking platform",
+    },
+    {
+      icon: <PaymentIcon className="w-8 h-8" />,
+      title: "Make payment",
+      description:
+        "We offer a variety of payment options to meet your preferences and ensure a hassle-free transaction process.",
+    },
+    {
+      icon: <ExploreIcon className="w-8 h-8" />,
+      title: "Explore destination",
+      description:
+        "You'll be immersed in a captivating tapestry of sights, sounds and tastes, as you wind your way through the ancient streets",
+    },
+  ];
   return (
     <section className="py-20 px-4 z-10 bg-gray-100">
       <div className="max-w-7xl mx-auto">
@@ -47,9 +51,9 @@ function HowItWorksSections() {
 
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-black/10 transition-opacity duration-500"></div>
 
-            <div className="absolute inset-0 flex flex-col items-center justify-end p-2 pb-8 transition-transform duration-500 group-hover:translate-y-[-8px] will-change-transform">
+            <div className="absolute inset-0 flex flex-col items-center justify-end p-2 pb-10 transition-transform duration-500 group-hover:translate-y-[-8px] will-change-transform">
               <SearchComponent />
-              <div className="text-white text-center mt-8 max-w-2xl">
+              <div className="text-white text-center mt-10 max-w-2xl">
                 <p className="text-lg mb-4">
                   Embark on a journey to find your dream destination, where
                   adventure and relaxation await, creating unforgettable

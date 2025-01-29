@@ -39,8 +39,7 @@ function OurBlogSection() {
             <a
               key={post.id}
               href="#"
-              className="block bg-white rounded-3xl shadow-lg overflow-hidden hover:text-gray-700 transition-colors"
-            >
+              className="block bg-white rounded-3xl shadow-2xl hover:shadow-xl overflow-hidden hover:text-gray-700 transition-all duration-500">
               <article className="group">
                 <div className="relative h-64">
                   <img
@@ -49,7 +48,7 @@ function OurBlogSection() {
                       "https://images.pexels.com/photos/28216688/pexels-photo-28216688/free-photo-of-autumn-camping.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                     }
                     alt={post.title}
-                    className="object-cover w-full h-full rounded-3xl"
+                    className="object-cover w-full h-full rounded-3xl group-hover:-translate-y-2 transition-transform duration-500"
                   />
                 </div>
                 <div className="p-6">
@@ -63,7 +62,9 @@ function OurBlogSection() {
         </div>
 
         <div className="text-center">
-          <button className="bg-black text-white px-8 py-3 rounded-full hover:bg-gray-800 transition-colors">
+        <button className="bg-black text-white px-8 md:px-16 py-3 rounded-full border border-black 
+      transition-all duration-300 hover:shadow-xl transform hover:scale-105 cursor-pointer 
+      hover:bg-transparent hover:text-black">
             View more
           </button>
         </div>
