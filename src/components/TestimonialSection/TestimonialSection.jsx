@@ -69,10 +69,10 @@ function TestimonialSection() {
           {/* Desktop Arrows */}
           <div className="hidden md:flex flex-row justify-start gap-4 mt-16">
             <button className="w-10 h-10 flex items-center rounded-4xl justify-center" onClick={prevTestimonial}>
-              <WestIcon className="text-gray-800" />
+              <WestIcon className="text-gray-500 hover:text-black" />
             </button>
             <button className="w-10 h-10 flex items-center justify-center" onClick={nextTestimonial}>
-              <WestIcon className="text-gray-00 rotate-180" />
+              <WestIcon className="text-gray-500 rotate-180 hover:text-black" />
             </button>
           </div>
 
@@ -84,7 +84,7 @@ function TestimonialSection() {
             color="disabled"
             sx={{ fontSize: 200 }}
           />
-          <p className="text-gray-600 text-2xl leading-relaxed max-w-3xl md:justify-start">
+          <p className="text-gray-600 text-2xl leading-relaxed max-w-3xl md:justify-start h-[200px] overflow-hidden">
           {testimonials[currentTestimonial].text}
           </p>
         </div>
