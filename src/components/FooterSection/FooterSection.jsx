@@ -59,7 +59,7 @@ function FooterSection() {
     <footer className="bg-black text-gray-400 py-16">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="grid md:grid-cols-3">
+          <div className="grid md:grid-cols-3 text-center md:text-start">
             {Object.values(footerLinks).map((section) => (
               <div key={section.title}>
                 <h3 className="text-white text-xl font-semibold mb-6">
